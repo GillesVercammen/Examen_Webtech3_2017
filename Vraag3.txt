@@ -1,0 +1,32 @@
+SOAP
+#########
+SOAP maakt gebruikt van service interfaces om de logica te exposen.
+Voorbeeld: 
+@WebService
+interface  ResultaatService {
+
+	@WebMethod
+	public String getResultaat(String studentNaam);
+	
+}
+
+de ResultaatService interface en operatie wordt dus ge-exposed.
+Bij dit voorbeeld is de getResultaat public exposed and pakt een studentNaam als input en toont resultaat(geslaagd/niet geslaagd) als output.
+
+REST
+#########
+in REST maken we geen gebruik van deze Service interface, in plaats hiervaan worden er URI public exposed.
+Voorbeeld:
+@Path("+/ResultaatService")
+class ResultaatService {
+	
+	@path("/GetResultaat/{studentNaam}
+	public String getResultaat(
+		@PathParam("studentNaam") String studentNaam) {
+		
+			...
+			
+			}
+}
+Bij dit voorbeeld zal de uri om bovenstaande methode op te vragen dus zijn:
+http://<appNaam>:/ResultaatService/GetResultaat/

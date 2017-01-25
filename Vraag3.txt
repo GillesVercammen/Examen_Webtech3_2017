@@ -1,3 +1,5 @@
+In plaats van XML te gebruiken voor een request te doen (zoals bij SOAP), Zal bij REST enkel een url nodig zijn. Dde meeste webservices die REST hanteren, halen de nodige informatie gebruikmakend van de url, REST kan gebruikt maken van 4 HTTP verbs (GET,POST,DELETE,PUT). REST moet geen xml gebruiken (zoals bij SOAP) om een response te geven. Het is juist de bedoeling om een een output te krijgen in een format dat gemakelijk te parsen is binnen de programmeertaal dat gebruikt wordt.
+
 SOAP
 #########
 SOAP maakt gebruikt van service interfaces om de logica te exposen.

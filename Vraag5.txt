@@ -1,0 +1,1 @@
+Je kan in REST ook XML gebruiken om type safety te hebben.

@@ -1,1 +1,3 @@
 Je kan in REST ook XML gebruiken om type safety te hebben.
+
+gebruik maken van 3th party type safe library?
